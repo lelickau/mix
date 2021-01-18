@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    font-family: 'CormorantInfant', serif;
+    font-family: 'CormorantInfant';
     font-size: $mainfz;
     font-weight: 400;
     line-height: $mainlh;
@@ -40,7 +40,7 @@ body {
 .header {
     width: 100%;
     min-height: 1151px;
-    background-image: url('../images/header/header-bg.jpg');
+    background-image: url('../images/header/header-bg.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -773,7 +773,7 @@ body {
     &__btn {
         width: 312px;
         min-height: 66px;
-        font-family: 'CormorantInfant', serif;
+        font-family: 'CormorantInfant';
         font-size: $btnfz;
         line-height: $btnlh;
         color: $btncol;
