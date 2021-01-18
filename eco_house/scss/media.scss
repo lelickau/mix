@@ -1,0 +1,443 @@
+@media (hover: hover) and (pointer: fine) {
+    .pickmeup .pmu-instance .pmu-selected:hover {
+        color: $maincolbg;
+        background-color: #eee;
+    }
+}
+
+@media (max-width: 1250px) {
+    .header {
+        &__navigation {
+            flex-direction: column;
+        }
+
+        &__menu {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        &__social {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .boocking {
+        &__box {
+            flex-direction: column;
+        }
+
+        .line {
+            width: 3px;
+            height: 37px;
+            background-color: $maincolbg;
+            -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .rooms {
+        &__slider {
+            margin-bottom: 0;
+        }
+
+        &__slide {
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+        }
+
+        &__box-img {
+            width: 100%;
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &__title {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+        &__benefit {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__benefit-item {
+            margin: 15px 5px 15px 5px;
+        }
+    }
+
+    .gallery {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .reserve {
+        &__items {
+            flex-direction: column;
+        }
+
+        &__benefit {
+            justify-content: start;
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        &__benefit-text {
+            text-align: left;
+        }
+
+        &__info {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .line {
+            width: 3px;
+            height: 37px;
+        }
+
+        &__rooms {
+            flex-direction: column;
+        }
+
+        &__rooms-item {
+            position: static;
+        }
+    }
+
+    .events {
+        &__item {
+            flex-direction: column;
+        }
+
+        &__content {
+            order: 1;
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        position: relative;
+        min-height: 500px;
+
+        &__mobile-menu-box {
+            display: block;
+        }
+
+        &__navigation {
+            position: fixed;
+            right: 0;
+            left: 0;
+            z-index: 200;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 45px;
+            background-color: rgba(255, 255, 255, 0.979);
+            transform: translateY(-100%);
+
+            .header__logo {
+                display: none;
+            }
+        }
+
+        &__navigation--active {
+            transform: translateY(0);
+        }
+
+        &__list {
+            flex-direction: column;
+            margin-top: 25px;
+        }
+
+        &__item {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &__item + .header__item {
+            margin-left: 0;
+        }
+
+        &__social {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 70px;
+            margin-top: 0;
+        }
+
+        &__social-link {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        &__social-link + .header__social-link {
+            margin-top: 0;
+        }
+
+        &__btn {
+            margin-top: 165px;
+        }
+
+        &__btn-link {
+            width: 240px;
+            height: 60px;
+            font-size: $mainfz;
+            line-height: $mainlh;
+        }
+    }
+
+    .events {
+        &__image-box {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &__item--reverse {
+            .events__image-box {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .rooms {
+        .rooms__prev,
+        .rooms__next {
+            width: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__slide {
+            padding-right: 32px;
+            padding-left: 32px;
+        }
+
+        &__slider {
+            margin-top: 35px;
+        }
+    }
+
+    .reviews {
+        margin-top: 90px;
+
+        &__item {
+            flex-direction: column;
+        }
+
+        &__avatar {
+            margin-bottom: 5px;
+        }
+
+        &__content {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+
+    .reserve {
+        &__items {
+            margin-bottom: 40px;
+        }
+
+        &__benefit {
+            width: auto;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    .events {
+        padding-top: 10px;
+
+        &__box {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    body {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .title {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+    }
+
+    .reserve {
+        &__benefit-text {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+
+        &__benefit-img {
+            width: 30px;
+        }
+
+        .reserve-box {
+            width: 240px;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+
+        &__rooms-item {
+            width: 240px;
+        }
+    }
+
+    .about {
+        &__text {
+            margin-top: 15px;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+    }
+
+    .rooms {
+        &__prev,
+        &__next {
+            position: static;
+            margin: 5px;
+            transform: translateY(0%);
+        }
+
+        &__arrows {
+            justify-content: flex-end;
+        }
+
+        &__title {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+
+        &__slide {
+            padding: 0;
+        }
+
+        &__btn {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__btn-price,
+        &__btn-reserve {
+            width: 100%;
+        }
+    }
+
+    .gallery__box {
+        margin-top: 20px;
+    }
+
+    .reviews {
+        margin-top: 20px;
+
+        &__box {
+            margin-top: 20px;
+        }
+
+        &__data,
+        &__name {
+            text-align: center;
+        }
+    }
+
+    .events {
+        &__title {
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+        }
+
+        &__subtitle {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+
+        &__btn-box {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__price,
+        &__link-btn {
+            width: 100%;
+        }
+    }
+
+    .boocking {
+        &__box {
+            margin-top: 30px;
+        }
+
+        &__rooms,
+        &__calendar {
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+
+        &__btn,
+        &__calendar-title,
+        &__rooms-title {
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+
+        &__btn,
+        &__rooms,
+        &__calendar {
+            padding: 10px;
+        }
+    }
+}

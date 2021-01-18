@@ -1,0 +1,29 @@
+/* Regular 400 */
+@font-face {
+	font-family: 'CormorantInfant';
+	font-style: normal;
+	font-weight: 400;
+	src: local('CormorantInfant'), 
+		url('/fonts/CormorantInfant-Regular.woff') format('woff'),
+		url('/fonts/CormorantInfant-Regular.ttf') format('ttf');
+}
+
+/* medium 500 */
+@font-face {
+	font-family: 'CormorantInfant';
+	font-style: normal;
+	font-weight: 500;
+	src: local('CormorantInfant'), 
+		url('/fonts/CormorantInfant-Medium.woff') format('woff'),
+		url('/fonts/CormorantInfant-Medium.ttf') format('ttf');
+}
+
+/* bold 700 */
+@font-face {
+	font-family: 'CormorantInfant';
+	font-style: normal;
+	font-weight: 700;
+	src: local('CormorantInfant'), 
+		url('/fonts/CormorantInfant-Bold.woff') format('woff'),
+		url('/fonts/CormorantInfant-Bold.ttf') format('ttf');
+}
