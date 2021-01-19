@@ -1,8 +1,8 @@
+@import "fonts";
+@import "reset";
 @import "preloader";
 @import "vars";
 @import "pickmeup";
-@import "reset";
-@import "fonts";
 
 // /*global style */
 * {
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    font-family: 'CormorantInfant';
+    font-family: 'CormorantInfant', serif;
     font-size: $mainfz;
     font-weight: 400;
     line-height: $mainlh;
@@ -352,7 +352,7 @@ body {
     .boocking__rooms-input {
         display: none;
 
-        &+span {
+        & + span {
             position: relative;
             display: block;
             height: $radioSize;
@@ -387,7 +387,7 @@ body {
             }
         }
 
-        &:checked+span {
+        &:checked + span {
             &::before {
                 background-color: $maincolbg;
                 transform: scale(1.04);
@@ -401,10 +401,9 @@ body {
     }
 
     &:hover {
-
         .reserve__rooms-input,
         .boocking__rooms-input {
-            &+span {
+            & + span {
                 &::before {
                     transform: scale(.92);
                 }
@@ -414,7 +413,7 @@ body {
                 }
             }
 
-            &:checked+span {
+            &:checked + span {
                 &::after {
                     transform: scale(.4);
                 }
@@ -773,7 +772,7 @@ body {
     &__btn {
         width: 312px;
         min-height: 66px;
-        font-family: 'CormorantInfant';
+        font-family: 'CormorantInfant', serif;
         font-size: $btnfz;
         line-height: $btnlh;
         color: $btncol;
